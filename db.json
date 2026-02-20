@@ -1,1 +1,510 @@
-{}
+{
+  "featureLookup": {
+    "11": "۲۴۰cc",
+    "12": "قوطی",
+    "13": "تکدانه",
+    "14": "فلزی",
+    "21": "۳۳۰cc",
+    "22": "بطری",
+    "23": "گلنوش",
+    "24": "پلاستیکی",
+    "31": "۵۰۰cc",
+    "32": "شیشه",
+    "33": "بهنوش",
+    "34": "شیشه‌ای",
+    "41": "۱۰۰۰cc",
+    "42": "کارتن",
+    "43": "زمزم",
+    "44": "مقوایی"
+  },
+  "productItems": [
+    {
+      "productCode": 1001,
+      "technicalNumber": 501,
+      "feature1": 11,
+      "feature2": 12,
+      "feature3": 13,
+      "feature4": 14,
+      "id": "efeb"
+    },
+    {
+      "productCode": 1002,
+      "technicalNumber": 502,
+      "feature1": 21,
+      "feature2": 22,
+      "feature3": 23,
+      "feature4": 24,
+      "id": "9f61"
+    },
+    {
+      "productCode": 1003,
+      "technicalNumber": 503,
+      "feature1": 31,
+      "feature2": 32,
+      "feature3": 33,
+      "feature4": 34,
+      "id": "17b9"
+    },
+    {
+      "productCode": 1004,
+      "technicalNumber": 504,
+      "feature1": 41,
+      "feature2": 42,
+      "feature3": 43,
+      "feature4": 44,
+      "id": "28a8"
+    }
+  ],
+  "factors": [
+    {
+      "id": "1",
+      "header": {
+        "anbar": "101",
+        "anbarShobe": "انبار شعبه اراک",
+        "noeRasid": "رسید انتقالی غیر همزمان",
+        "serialNumber": "S-1001",
+        "rasidMostaqim": false,
+        "shomareEjae": "E-2001",
+        "shomareInvoice": "INV-3001",
+        "shomareDarkhast": "D-4001",
+        "shomareSand": "SN-5001",
+        "kodHesab": "H-6001",
+        "tavhilGirandeh": "احمد رضایی",
+        "naqd": true,
+        "mahalEghdam": "تهران"
+      },
+      "rows": [
+        {
+          "productCode": 1001,
+          "technicalNumber": 501,
+          "feature1": 11,
+          "feature2": 12,
+          "feature3": 13,
+          "feature4": 14,
+          "productName": "نوشابه ۲۴۰",
+          "productNameEn": "Soda 240",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "50",
+          "unitPrice": "15000",
+          "totalPrice": "750000"
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "نوشابه ۳۳۰",
+          "productNameEn": "Soda 330",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "30",
+          "unitPrice": "20000",
+          "totalPrice": "600000"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "header": {
+        "anbar": "102",
+        "anbarShobe": "انبار شعبه اصفهان",
+        "noeRasid": "رسید مستقیم",
+        "serialNumber": "S-1002",
+        "rasidMostaqim": true,
+        "shomareEjae": "E-2002",
+        "shomareInvoice": "INV-3002",
+        "shomareDarkhast": "D-4002",
+        "shomareSand": "SN-5002",
+        "kodHesab": "H-6002",
+        "tavhilGirandeh": "محمد حسینی",
+        "naqd": false,
+        "mahalEghdam": "اصفهان"
+      },
+      "rows": [
+        {
+          "productCode": 1003,
+          "technicalNumber": 503,
+          "feature1": 31,
+          "feature2": 32,
+          "feature3": 33,
+          "feature4": 34,
+          "productName": "آبمیوه ۵۰۰",
+          "productNameEn": "Juice 500",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "100",
+          "unitPrice": "25000",
+          "totalPrice": "2500000"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "header": {
+        "anbar": "103",
+        "anbarShobe": "انبار شعبه شیراز",
+        "noeRasid": "رسید اجاعه",
+        "serialNumber": "S-1003",
+        "rasidMostaqim": false,
+        "shomareEjae": "E-2003",
+        "shomareInvoice": "INV-3003",
+        "shomareDarkhast": "D-4003",
+        "shomareSand": "SN-5003",
+        "kodHesab": "H-6003",
+        "tavhilGirandeh": "علی محمدی",
+        "naqd": true,
+        "mahalEghdam": "شیراز"
+      },
+      "rows": [
+        {
+          "productCode": 1004,
+          "technicalNumber": 504,
+          "feature1": 41,
+          "feature2": 42,
+          "feature3": 43,
+          "feature4": 44,
+          "productName": "دوغ ۱۰۰۰",
+          "productNameEn": "Doogh 1000",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "200",
+          "unitPrice": "18000",
+          "totalPrice": "3600000"
+        },
+        {
+          "productCode": 1001,
+          "technicalNumber": 501,
+          "feature1": 11,
+          "feature2": 12,
+          "feature3": 13,
+          "feature4": 14,
+          "productName": "نوشابه ۲۴۰",
+          "productNameEn": "Soda 240",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "75",
+          "unitPrice": "15000",
+          "totalPrice": "1125000"
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "نوشابه ۳۳۰",
+          "productNameEn": "Soda 330",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "60",
+          "unitPrice": "20000",
+          "totalPrice": "1200000"
+        }
+      ]
+    },
+    {
+      "id": "cfb4",
+      "header": {
+        "anbar": "سیزب",
+        "anbarShobe": "",
+        "noeRasid": "رسید انتقالی غیر همزمان",
+        "serialNumber": "یسبسی",
+        "rasidMostaqim": true,
+        "shomareEjae": "یب",
+        "shomareInvoice": "ببب",
+        "shomareDarkhast": "س",
+        "shomareSand": "",
+        "kodHesab": "بسیب",
+        "tavhilGirandeh": "بسیب",
+        "naqd": false,
+        "mahalEghdam": "",
+        "tarikh": 1772567424937,
+        "tarkhDarkhast": 1773777026904,
+        "tarikhMiladi": 1772567428278,
+        "tarikhMother": 1772567437913,
+        "saatSarResid": 1771617042240
+      },
+      "rows": [
+        {
+          "productCode": 1001,
+          "technicalNumber": 501,
+          "feature1": 11,
+          "feature2": 12,
+          "feature3": 13,
+          "feature4": 14,
+          "productName": "",
+          "productNameEn": "",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "",
+          "unitPrice": "",
+          "totalPrice": ""
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "",
+          "productNameEn": "",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "",
+          "unitPrice": "",
+          "totalPrice": ""
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "",
+          "productNameEn": "",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "",
+          "unitPrice": "",
+          "totalPrice": ""
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "header": {
+        "anbar": "105",
+        "anbarShobe": "انبار شعبه مشهد",
+        "noeRasid": "رسید مستقیم",
+        "serialNumber": "S-1005",
+        "rasidMostaqim": true,
+        "shomareEjae": "E-2005",
+        "shomareInvoice": "INV-3005",
+        "shomareDarkhast": "D-4005",
+        "shomareSand": "SN-5005",
+        "kodHesab": "H-6005",
+        "tavhilGirandeh": "حسین نوری",
+        "naqd": true,
+        "mahalEghdam": "مشهد"
+      },
+      "rows": [
+        {
+          "productCode": 1001,
+          "technicalNumber": 501,
+          "feature1": 11,
+          "feature2": 12,
+          "feature3": 13,
+          "feature4": 14,
+          "productName": "نوشابه ۲۴۰",
+          "productNameEn": "Soda 240",
+          "delivererItem": "DI-100",
+          "delivererName": "شرکت پخش البرز",
+          "quantity": "500",
+          "unitPrice": "14500",
+          "totalPrice": "7250000"
+        },
+        {
+          "productCode": 1003,
+          "technicalNumber": 503,
+          "feature1": 31,
+          "feature2": 32,
+          "feature3": 33,
+          "feature4": 34,
+          "productName": "آبمیوه ۵۰۰",
+          "productNameEn": "Juice 500",
+          "delivererItem": "DI-101",
+          "delivererName": "شرکت پخش البرز",
+          "quantity": "300",
+          "unitPrice": "24000",
+          "totalPrice": "7200000"
+        },
+        {
+          "productCode": 1004,
+          "technicalNumber": 504,
+          "feature1": 41,
+          "feature2": 42,
+          "feature3": 43,
+          "feature4": 44,
+          "productName": "دوغ ۱۰۰۰",
+          "productNameEn": "Doogh 1000",
+          "delivererItem": "DI-102",
+          "delivererName": "شرکت پخش البرز",
+          "quantity": "150",
+          "unitPrice": "17500",
+          "totalPrice": "2625000"
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "نوشابه ۳۳۰",
+          "productNameEn": "Soda 330",
+          "delivererItem": "DI-103",
+          "delivererName": "شرکت پخش البرز",
+          "quantity": "220",
+          "unitPrice": "19500",
+          "totalPrice": "4290000"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "header": {
+        "anbar": "106",
+        "anbarShobe": "انبار شعبه کرمان",
+        "noeRasid": "رسید انتقالی غیر همزمان",
+        "serialNumber": "S-1006",
+        "rasidMostaqim": false,
+        "shomareEjae": "E-2006",
+        "shomareInvoice": "INV-3006",
+        "shomareDarkhast": "D-4006",
+        "shomareSand": "SN-5006",
+        "kodHesab": "H-6006",
+        "tavhilGirandeh": "فاطمه احمدی",
+        "naqd": false,
+        "mahalEghdam": "کرمان"
+      },
+      "rows": [
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "نوشابه ۳۳۰",
+          "productNameEn": "Soda 330",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "80",
+          "unitPrice": "20000",
+          "totalPrice": "1600000"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "header": {
+        "anbar": "107",
+        "anbarShobe": "انبار شعبه رشت",
+        "noeRasid": "رسید اجاعه",
+        "serialNumber": "S-1007",
+        "rasidMostaqim": false,
+        "shomareEjae": "E-2007",
+        "shomareInvoice": "INV-3007",
+        "shomareDarkhast": "",
+        "shomareSand": "",
+        "kodHesab": "H-6007",
+        "tavhilGirandeh": "مریم کاظمی",
+        "naqd": true,
+        "mahalEghdam": "رشت"
+      },
+      "rows": [
+        {
+          "productCode": 1004,
+          "technicalNumber": 504,
+          "feature1": 41,
+          "feature2": 42,
+          "feature3": 43,
+          "feature4": 44,
+          "productName": "دوغ ۱۰۰۰",
+          "productNameEn": "Doogh 1000",
+          "delivererItem": "DI-200",
+          "delivererName": "پخش سراسری",
+          "quantity": "400",
+          "unitPrice": "18000",
+          "totalPrice": "7200000"
+        },
+        {
+          "productCode": 1001,
+          "technicalNumber": 501,
+          "feature1": 11,
+          "feature2": 12,
+          "feature3": 13,
+          "feature4": 14,
+          "productName": "نوشابه ۲۴۰",
+          "productNameEn": "Soda 240",
+          "delivererItem": "DI-201",
+          "delivererName": "پخش سراسری",
+          "quantity": "250",
+          "unitPrice": "15000",
+          "totalPrice": "3750000"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "header": {
+        "anbar": "108",
+        "anbarShobe": "انبار شعبه همدان",
+        "noeRasid": "رسید مستقیم",
+        "serialNumber": "S-1008",
+        "rasidMostaqim": true,
+        "shomareEjae": "",
+        "shomareInvoice": "INV-3008",
+        "shomareDarkhast": "D-4008",
+        "shomareSand": "SN-5008",
+        "kodHesab": "H-6008",
+        "tavhilGirandeh": "جواد صالحی",
+        "naqd": false,
+        "mahalEghdam": "همدان"
+      },
+      "rows": [
+        {
+          "productCode": 1003,
+          "technicalNumber": 503,
+          "feature1": 31,
+          "feature2": 32,
+          "feature3": 33,
+          "feature4": 34,
+          "productName": "آبمیوه ۵۰۰",
+          "productNameEn": "Juice 500",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "90",
+          "unitPrice": "26000",
+          "totalPrice": "2340000"
+        },
+        {
+          "productCode": 1002,
+          "technicalNumber": 502,
+          "feature1": 21,
+          "feature2": 22,
+          "feature3": 23,
+          "feature4": 24,
+          "productName": "نوشابه ۳۳۰",
+          "productNameEn": "Soda 330",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "45",
+          "unitPrice": "21000",
+          "totalPrice": "945000"
+        },
+        {
+          "productCode": 1004,
+          "technicalNumber": 504,
+          "feature1": 41,
+          "feature2": 42,
+          "feature3": 43,
+          "feature4": 44,
+          "productName": "دوغ ۱۰۰۰",
+          "productNameEn": "Doogh 1000",
+          "delivererItem": "",
+          "delivererName": "",
+          "quantity": "120",
+          "unitPrice": "18500",
+          "totalPrice": "2220000"
+        }
+      ]
+    }
+  ]
+}

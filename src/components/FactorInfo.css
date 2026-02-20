@@ -1,0 +1,24 @@
+.factor-table {
+    border-collapse: separate;
+}
+
+.factor-table td {
+    padding: 0 3px;
+}
+
+.input-field.time-input {
+    width: 40px;
+}
+
+.factor-table select {
+    width: 100%;
+    display: block;
+    min-width: 0;
+    padding: 0.2rem;
+}
+
+.day-number {
+    position: absolute;
+    width: 30px;
+    
+}

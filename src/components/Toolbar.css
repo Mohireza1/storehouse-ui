@@ -1,0 +1,62 @@
+.tabs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tab {
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+
+.toolbar-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.2rem 0.7rem;
+    background: none;
+    border: transparent 2px solid;
+}
+
+.toolbar-item:hover {
+    background: linear-gradient(to top, var(--color-gold), var(--color-gold-light));
+    border: var(--color-gold) 2px solid;
+    cursor: pointer;
+}
+
+.toolbar-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--color-primary-blue);
+    min-width: 81px;
+}
+
+.toolbar-name {
+    font-size: 0.8rem;
+}
+
+.misc_button {
+    margin: 0.3rem 0.2rem;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.75rem;
+    min-width: 130px;
+    background: transparent;
+    border: var(--color-border-gray) 1px solid;
+    border-radius: 5px;
+}
