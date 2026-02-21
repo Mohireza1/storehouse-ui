@@ -131,3 +131,7 @@
 .anbar-menu-grid-cell:last-child {
     border-left: none;
 }
+
+.fi-autofill {
+    border: 1px solid var(--color-border-gray);
+}
