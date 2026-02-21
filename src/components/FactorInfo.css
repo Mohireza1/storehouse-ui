@@ -1,5 +1,6 @@
 .factor-table {
     border-collapse: separate;
+    padding: 0 1rem;
 }
 
 .factor-table td {
@@ -8,6 +9,14 @@
 
 .input-field.time-input {
     width: 40px;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    gap: 0.3rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .factor-table select {
@@ -20,5 +29,105 @@
 .day-number {
     position: absolute;
     width: 30px;
-    
+
+}
+
+/* Anbar Menu */
+.anbar-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anbar-menu-modal {
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border-gray);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.anbar-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: var(--color-secondary-blue);
+    color: var(--color-bg-white);
+}
+
+.anbar-menu-title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.anbar-menu-close-btn {
+    background: none;
+    border: none;
+    color: var(--color-bg-white);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+}
+
+.anbar-menu-close-btn:hover {
+    opacity: 0.7;
+}
+
+.anbar-menu-grid-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var(--color-secondary-blue);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.anbar-menu-grid-header-cell {
+    text-align: center;
+    padding: 4px 6px;
+    color: var(--color-bg-white);
+    font-size: 12px;
+    white-space: nowrap;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.anbar-menu-grid-header-cell:last-child {
+    border-left: none;
+}
+
+.anbar-menu-grid-body {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.anbar-menu-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.anbar-menu-grid-row:hover {
+    background: #e8f0fe;
+}
+
+.anbar-menu-grid-cell {
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+    border-left: 1px solid var(--color-border);
+    white-space: nowrap;
+}
+
+.anbar-menu-grid-cell:last-child {
+    border-left: none;
 }

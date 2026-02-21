@@ -1,25 +1,36 @@
 footer {
     margin-top: auto;
-    padding: 8px 0;
+    padding: 0.8rem 0 0 0;
 }
 
 .footer-tablist {
     display: flex;
-    gap: 4px;
     padding: 0 12px;
     margin-bottom: 12px;
 }
 
 .footer-tab {
-    /* padding: 6px 20px; */
-    /* background: linear-gradient(to bottom, #e8f0f8, #c8d8e8); */
-    border: 1px solid var(--color-border-gray);
-    font-size: 13px;
+    border: 1px solid var(--color-primary-blue);
+    border-top: none;
+    font-size: 0.9rem;
     cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-collapse: collapse;
+    border-radius: 2px 2px 50% 50%;
+    background: transparent;
+    color: inherit;
+    transition: background 0.02s ease, color 0.02s ease;
 }
 
 .footer-tab:hover {
     background: linear-gradient(to bottom, #d0e0f0, #b0c8e0);
+}
+
+.footer-tab.active {
+    background: var(--color-gradient-pale);
+    color: #000;
+    font-weight: 500;
+    border-color: #a9b8ca;
 }
 
 .footer-button-bar {
@@ -99,13 +110,62 @@ footer {
     border-radius: 50%;
 }
 
+.nav-btn-decorative {
+    border-radius: 4px;
+    cursor: default;
+    opacity: 0.6;
+}
+
+.nav-btn-decorative:disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.footer-statusbar-hr {
+    margin: 6px 0 0 0;
+    border: none;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-statusbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 3px 12px;
+    font-size: 11px;
+    color: var(--color-text-primary);
+    direction: rtl;
+}
+
+.statusbar-icon {
+    font-size: 13px;
+    color: var(--color-primary-blue);
+    flex-shrink: 0;
+}
+
+.statusbar-section {
+    padding-block-start: 3px;
+    padding-right: 16px;
+}
+
+.statusbar-section:first-of-type {
+    padding-right: 0;
+}
+
+.statusbar-datetime {
+    margin-right: auto;
+    display: flex;
+    gap: 12px;
+    font-variant-numeric: tabular-nums;
+    direction: ltr;
+}
+
 .nav-btn:hover {
     background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
-    transform: scale(1.05);
 }
 
 .nav-btn:active {
-    transform: scale(0.95);
+    background: linear-gradient(to bottom, rgb(226, 226, 226), #b4b4b4);
 }
 
 .nav-decorative {
@@ -114,8 +174,8 @@ footer {
     justify-content: center;
     min-width: 40px;
     padding: 4px 8px;
-    background: var(--color-bg-white);
-    border: 1px solid var(--color-border);
+    background: none !important;
+    border: none !important;
     border-radius: 3px;
     font-size: 12px;
     color: var(--color-text-primary);

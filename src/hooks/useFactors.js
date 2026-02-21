@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from "react"
 import { createEmptyHeader, createEmptyRow, deepCloneList } from "./factorUtils"
-import { fetchFactors, postFactor, putFactor, deleteFactorById } from "./factorApi"
+import { fetchFactors, postFactor, putFactor, deleteFactorById } from "../services/factorApi"
 import { validateFactor } from "./factorValidation"
 import useFactorRows from "./useFactorRows"
 

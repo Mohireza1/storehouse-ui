@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import DatePicker from 'react-multi-date-picker'
 import TimePicker from 'react-multi-date-picker/plugins/time_picker'
 import persian from 'react-date-object/calendars/persian'
 import persian_fa from 'react-date-object/locales/persian_fa'
+import AnbarMenu from './AnbarMenu'
+import data from '../../db.json'
 import './FactorInfo.css'
 
 const JalaliDatePicker = ({ name, value, onChange, disabled }) => (
@@ -50,6 +53,17 @@ const defaultHeader = {
 const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEditMode = false }) => {
     const formData = { ...defaultHeader, ...externalHeader }
     const disabled = !isEditMode
+    const [isAnbarMenuOpen, setIsAnbarMenuOpen] = useState(false)
+    const { warehouses = [] } = data
+
+    const handleAnbarSelect = (item) => {
+        externalSetHeader((prev) => ({
+            ...prev,
+            anbar: item.code,
+            anbarShobe: item.name,
+        }))
+        setIsAnbarMenuOpen(false)
+    }
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target
@@ -68,7 +82,6 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
             <form className="factor-form">
                 <table className="factor-table">
                     <tbody>
-                        {/* Row 1 */}
                         <tr>
                             <td className="fi-label">انبار:</td>
                             <td>
@@ -78,10 +91,19 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                                     onChange={handleChange}
                                     className="input-field"
                                     disabled={disabled}
+                                    onClick={() => isEditMode && setIsAnbarMenuOpen(true)}
+                                    readOnly={isEditMode}
+                                    style={isEditMode ? { cursor: 'pointer' } : {}}
+                                />
+                                <AnbarMenu
+                                    items={warehouses}
+                                    isOpen={isAnbarMenuOpen && isEditMode}
+                                    onSelect={handleAnbarSelect}
+                                    onClose={() => setIsAnbarMenuOpen(false)}
                                 />
                             </td>
                             <td colSpan={3} className="fi-autofill">
-                                <div className="">انبار شعبه اراک</div>
+                                <div className="">{formData.anbarShobe || ''}</div>
                             </td>
                             <td className="fi-label">نوع رسید:</td>
                             <td>
@@ -135,7 +157,6 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                             </td>
                         </tr>
 
-                        {/* Row 2 */}
                         <tr>
                             <td className="fi-label">سریال:</td>
                             <td>
@@ -191,7 +212,6 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                             </td>
                         </tr>
 
-                        {/* Row 3 */}
                         <tr>
                             <td className="fi-label">کد حساب:</td>
                             <td>
@@ -241,7 +261,6 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                             <td colSpan="2"></td>
                         </tr>
 
-                        {/* Row 4 */}
                         <tr>
                             <td className="fi-label">تحویل گیرنده:</td>
                             <td>
@@ -281,10 +300,13 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                             </td>
                             <td className="fi-label">تاریخ میلادی:</td>
                             <td>
-                                <JalaliDatePicker
+                                <DatePicker
+                                    calendarPosition="bottom-right"
                                     name="tarikhMiladi"
                                     value={formData.tarikhMiladi}
-                                    onChange={handleDateChange}
+                                    onChange={(date) => !disabled && handleDateChange('tarikhMiladi', date)}
+                                    inputClass={`input-field date-input${disabled ? ' disabled' : ''}`}
+                                    placeholder="YYYY/MM/DD"
                                     disabled={disabled}
                                 />
                             </td>
@@ -302,7 +324,6 @@ const FactorInfo = ({ header: externalHeader, setHeader: externalSetHeader, isEd
                             </td>
                         </tr>
 
-                        {/* Row 5 */}
                         <tr>
                             <td className="fi-label">حوزه عملکرد:</td>
                             <td>

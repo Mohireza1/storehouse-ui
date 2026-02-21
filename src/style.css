@@ -1,28 +1,22 @@
 :root {
-    /* Primary Colors */
     --color-primary-blue: #2b6cb0;
     --color-secondary-blue: #6487bb;
     --color-accent-blue: #5fa0f8;
 
-    /* Background Gradient Colors */
     --color-gradient-light: #95c2ff;
     --color-gradient-medium: #BCD9FF;
     --color-gradient-pale: #e3efff;
 
-    /* Accent Colors */
     --color-gold: #e9b723;
     --color-gold-light: #ffebad;
 
-    /* Text & Border Colors */
     --color-text-primary: #222;
     --color-text-secondary: #2c3e50;
     --color-text-muted: #999;
     --color-border-gray: #898989;
 
-    /* Background Colors */
     --color-bg-white: #fff;
 
-    /* Border Color */
     --color-border: #ddd;
 }
 
@@ -47,11 +41,11 @@ button {
 body {
     background: linear-gradient(to bottom,
             var(--color-gradient-light) 0%,
-            var(--color-gradient-light) 10%,
+            var(--color-gradient-light) 5%,
             var(--color-gradient-medium) 20%,
             var(--color-gradient-pale) 50%,
             var(--color-gradient-medium) 80%,
-            var(--color-gradient-light) 90%,
+            var(--color-gradient-light) 95%,
             var(--color-gradient-light) 100%);
     color: var(--color-text-primary);
     min-height: 100vh;

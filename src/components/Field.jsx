@@ -23,16 +23,18 @@ const Field = ({ fieldRows, isEditMode }) => {
     })
 
     return (
-        <div className="field">
-            <FieldHeader />
+        <div className="field-wrapper">
             <button 
                 type="button" 
                 onClick={handleAddRow}
                 disabled={!isEditMode}
-                style={{ opacity: isEditMode ? 1 : 0.5, cursor: isEditMode ? 'pointer' : 'not-allowed' }}
+                className="btn-add-row"
             >
+                <span className="btn-icon">+</span>
                 افزودن ردیف
             </button>
+            <div className="field">
+            <FieldHeader />
             <ProductCodeMenu
                 items={productItems}
                 isOpen={isMenuOpen && isEditMode}
@@ -53,6 +55,7 @@ const Field = ({ fieldRows, isEditMode }) => {
                         onAddRow={handleAddRow}
                     />
                 ))}
+            </div>
             </div>
         </div>
     )

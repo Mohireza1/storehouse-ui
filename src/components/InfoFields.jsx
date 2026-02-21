@@ -19,7 +19,6 @@ const InfoFields = ({ rows, selectedRowIndex }) => {
         <div className="info-fields-container">
             <table className="info-fields-table">
                 <tbody>
-                    {/* Row 1 */}
                     <tr>
                         <td className="if-label">ویژگی ۱:</td>
                         <td className="if-value">{vizhegi1}</td>
@@ -31,7 +30,6 @@ const InfoFields = ({ rows, selectedRowIndex }) => {
                         <td className="if-value if-value-num">ریال</td>
                     </tr>
 
-                    {/* Row 2 */}
                     <tr>
                         <td className="if-label">ویژگی ۲:</td>
                         <td className="if-value">{vizhegi2}</td>
@@ -40,10 +38,9 @@ const InfoFields = ({ rows, selectedRowIndex }) => {
                         <td className="if-label">جمع مقدار :</td>
                         <td className="if-value if-value-num">{jamMeghdar}</td>
                         <td className="if-label">جمع اضافات :</td>
-                        <td className="if-value if-value-num"></td>
+                        <td className="if-value if-value-num">ریال</td>
                     </tr>
 
-                    {/* Row 3 */}
                     <tr>
                         <td className="if-label">ویژگی ۳:</td>
                         <td className="if-value">{vizhegi3}</td>
@@ -52,10 +49,9 @@ const InfoFields = ({ rows, selectedRowIndex }) => {
                         <td className="if-label">جمع ارز :</td>
                         <td className="if-value if-value-num"></td>
                         <td className="if-label">جمع قیمت‌تمام‌شده :</td>
-                        <td className="if-value if-value-num"></td>
+                        <td className="if-value if-value-num">ریال</td>
                     </tr>
 
-                    {/* Row 4 */}
                     <tr>
                         <td className="if-label">ویژگی ۴:</td>
                         <td className="if-value">{vizhegi4}</td>
@@ -64,10 +60,9 @@ const InfoFields = ({ rows, selectedRowIndex }) => {
                         <td className="if-label">جمع وزن (KG):</td>
                         <td className="if-value if-value-num"></td>
                         <td className="if-label">جمع کسورات :</td>
-                        <td className="if-value if-value-num"></td>
+                        <td className="if-value if-value-num">ریال</td>
                     </tr>
 
-                    {/* Row 5 */}
                     <tr>
                         <td className="if-label">حساب مرتبط :</td>
                         <td className="if-value"></td>

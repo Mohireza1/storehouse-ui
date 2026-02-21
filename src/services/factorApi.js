@@ -1,5 +1,5 @@
 import axios from "axios"
-import { API_URL } from "./factorUtils"
+import { API_URL } from "../hooks/factorUtils"
 
 export const fetchFactors = () =>
     axios.get(API_URL).then(res => res.data)

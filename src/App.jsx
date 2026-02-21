@@ -20,8 +20,6 @@ const App = () => {
             <InfoFields rows={factors.fieldRows.rows} selectedRowIndex={factors.fieldRows.selectedRowIndex} />
             <Footer
                 isEditMode={factors.isEditMode}
-                currentPosition={factors.currentPosition}
-                totalFactors={factors.totalFactors}
                 hasNext={factors.hasNext}
                 hasPrev={factors.hasPrev}
                 goToFirst={factors.goToFirst}
